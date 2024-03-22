@@ -2,12 +2,106 @@
 <html lang="pt-br">
     <head>
         <meta charset="UTF-8">
-        <title> DLSS & FSR</title>
+        <title> DLSS BÁSICO</title>
+        <style>
+            body{
+                background-color: dimgray;
+            }
+
+        .foto { 
+            position: relative;
+            left: 620px;
+            right: 30px;
+            height: 20px;
+        }    
+            
+        .cor  {
+            border: 5px outset green;
+            background-color: black;
+            text-align: center;
+            
+        }
+h1 {color: aliceblue;}
+h2 {color: aliceblue;}
+h3 {color: aliceblue;}
+h4 {color: aliceblue;}
+p {color: antiquewhite;}
+        </style>
 
     </head>
     <body> 
-        <h1><b> DIFERENCIAL DO DLSS & FSR</b></h1>
+        
+        <div class="cor">
+        <h1> DLSS DRIVERS </h1>
+    </div>
         <h2> DLSS Funcionamento</h2>
-        <img src="DLSS AAA.jpg">
+        <div class="foto">
+        <img src="DLSS AAA.jpg" width="700" height="400" >
+        </div>
+
+
+        <P><b>Primeiro vamos Dividir o Funcionamento do DLSS em 7 etapas:<b></P>
+
+        <h3>Etapa 1: Captura da Cena</h3>
+<p>O motor gráfico do jogo captura a cena atual, <br> consiste em uma imagem renderizada em sua resolução nativa.</p>
+
+
+        <h4>Etapa 2: Redução de Resolução (Lower Resolution Rendering)</h4>
+        <p>A cena capturada é reduzida para uma resolução menor,<br> geralmente pela metade em cada dimensão (por exemplo, de 1920x1080 para 960x540).<br> Isso economiza recursos de GPU.</p>
+        <p>Com base nos estudos economicos dessas GPUs atuais ,<br>As GPUs mais economicas e dedicas desempenho , e que mais se <br>beneficiam dos atuais DLSS são:</b></p>
+        <ul>
+<li>RTX 2060 / 2060 TI / 2080 </li>
+<li>RTX 3070 (SUPERIOR A ISSO > ALTO CONSUMO DE ENERGIA</li>
+<li>RTX 4060 / 4060 TI / 4070 SUPER TI / 4080 SUPER </li>
+
+        </ul>
+        <p> Atualmente as GPUs da Nvidia da série 4000 , são consideradas as mais economicas atuais</p>
+        
+        <hr>
+
+        <h4>Etapa 3: Rede Neural</h4>
+        <p>A imagem de resolução reduzida é alimentada para uma rede neural treinada previamente.</p>
+        <ul>
+<li>Rede Neural Profunda (Deep Neural Network): A rede neural utiliza um modelo de deep<br> learning para entender padrões e detalhes na imagem.</li>
+
+        </ul>
+
+        <hr>
+
+        <h4>Etapa 4: Inferência</h4>
+        <p>A rede neural inferencia os detalhes que foram perdidos na redução de resolução.</p>
+        <ul>
+            <li>Reconstrução de Detalhes: Com base em um conhecimento prévio de como as imagens <br>devem parecer em alta resolução, a rede neural reconstrói detalhes ausentes na imagem de <br>baixa resolução.</li>
+        </ul>
+        
+        <hr>
+
+        <h4>Etapa 5: Combinação de Resultados</h4>
+        <p>Os detalhes inferidos pela rede neural são combinados com a imagem de baixa resolução para <br>criar uma imagem de alta resolução e qualidade visualmente aprimorada.
+        </p>
+
+        <hr>
+
+        <h4>Etapa 6: Upscaling</h4>
+        <p>A imagem resultante é então ampliada de volta para a resolução original (ou superior) utilizando<br> técnicas de upscaling, preservando os detalhes e aprimoramentos feitos pela rede neural.
+        </p>
+
+        <hr>
+
+        <h4>Etapa 7: Exibição</h4>
+        <p>A imagem final processada, com detalhes reconstruídos e em alta resolução, é exibida na tela<br> para o jogador.</p>
+
+        <hr>
+
+        <h4> Considerações Adicionais: </h4>
+        <ul>
+<li>O DLSS é especialmente eficaz em ambientes 3D complexos, onde pequenos detalhes são<br> importantes.</li>
+<li>Ele oferece uma alternativa eficiente em termos de desempenho ao tradicional antialiasing,<br> mantendo a qualidade visual.</li>
+<li>A eficácia do DLSS pode variar dependendo da implementação do jogo e das configurações<br> escolhidas pelo usuário.</li>
+
+
+
+        </ul>
+        <p>Essas etapas fornecem uma visão geral do funcionamento do DLSS 3.0, demonstrando como eles(GPUs)<br> utiliza inteligência artificial para melhorar a qualidade visual em jogos e aplicativos.</p>
     </body>
 </html>
